@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins';
+    overflow-x: hidden;
+}
+.main{
+    background-image: url(Assets/Images/IN-en-20250512-TRIFECTA-perspective_688b8c03-78cb-46a6-ac1c-1035536f871a_large.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav{
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+nav img{
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.main button{
+    border: none;
+    width: 62px;
+    height: 30px;
+    margin: 3px;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+}
+.signin a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.main section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;         
+    z-index: 10;
+    text-align: center;    
+}
+.main section h1{
+    font-size: 42px;
+}
+.main section .rate{
+    font-size: 18px;
+    font-weight: 550;
+}
+.holder{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: baseline;
+    position: relative;
+    z-index: 10;
+    margin-top: 8px;
+}
+.holder input{
+    width: 350px;
+    height: 40px;
+    padding-left: 10px;
+    background: transparent;
+    overflow: hidden;
+    border: 2px solid grey;
+    color: grey;
+    border-radius: 2px;
+    margin: 2px;
+}
+.holder button{
+    padding: 2px;
+    font-size: 15px;
+    width: 130px;
+    height: 43px;
+    box-sizing: border-box;
+    transform: translatey(2%);
+}
+
+.content{
+    background-color: black;
+    width: auto;
+    height: auto;
+    
+}
+.content .trending{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: white;
+    text-decoration: underline solid red ;
+}
+.content .moviesl1{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-rows: 350px 350px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.moviesl1 li:hover{
+    transform: rotateX(25deg);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+.content img{
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.img{
+    position: relative;
+}
+.img .number{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  font-size: 80px;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  text-shadow: 3px 3px 5px black;
+  z-index: 2;
+  font-family: 'Poppins', sans-serif;
+}
+.content .reasons{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline solid red;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.content .bits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 50px;
+}
+.bits .bit{
+    height: 200px;
+    width: 180px;
+    color: white;
+    background-image: linear-gradient(to bottom right,rgb(8, 67, 122),rgb(33, 1, 39));
+    padding: 25px;
+    margin: 5px;
+    border-radius: 12px;
+    position: relative;
+}
+.bit h2{
+    font-size: 18px;
+}
+.bit p{
+    margin-top: 20px;
+    font-size: 12.5px;
+}
+.bit img{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border: none;
+}
+footer{
+    background-color: black;
+    height: auto;
+    width: 100vw;
+}
+footer .hold{
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .text{
+    padding-top: 50px;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+footer button{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 2px;
+    height: 43px;
+    width: 140px;
+    font-size: 18px;
+    transform: translateY(5%);
+    margin-left: 2px;
+    cursor: pointer;
+}
+footer input{
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    background: transparent;
+    overflow: hidden;
+    border: 2px solid grey;
+    color: grey;
+    border-radius: 2px;
+    margin: 2px;
+}
+
+footer .question{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: rgb(200, 200, 200);
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    justify-content: center;
+    align-items: center;
+}
+footer .footbar{
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-template-rows: 30px 30px 30px 30px ;
+    justify-content: center;
+    align-items: center;
+}
+.footbar a{
+    color: rgb(200, 200, 200);
+    font-size: 11px;
+}
+footer .dropdown{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    justify-content: center;
+    align-items: center;
+}
+footer .dropdown select{
+    background: transparent;
+    color: white;
+    padding: 2px;
+    font-size: 11px;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 5px;
+    height: 32px;
+    width: 130px;
+    margin: 2px;
+}
+.dropdown option{
+    color: black;
+    font-size: 11px;
+}
+footer .branding{
+    font-size: 11px;
+    color: rgb(200, 200, 200);
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-template-rows: 100px;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 1300px){
+    .content .moviesl1{
+        grid-template-columns: 250px 250px 250px 250px;
+        grid-template-rows: 350px 350px 350px;
+        
+    }
+    .content .bits{
+        flex-direction: column;
+    }
+    .bits .bit{
+        height: 20vh;
+        width: 60vw;
+    }
+    .bit h2{
+        font-size: 19px;
+    }
+    .bit p{
+        font-size: 16px;
+    }
+    footer .question{
+        grid-template-columns: 270px 270px 270px;
+    }
+    footer .footbar{
+        grid-template-columns: 270px 270px 270px;
+        grid-template-rows: 30px 30px 30px 30px 30px;
+    }
+    footer .dropdown{
+        grid-template-columns: 270px 270px 270px;
+    }
+    footer .branding{
+        grid-template-columns: 270px 270px 270px;
+
+    }
+}
+@media only screen and (max-width: 1100px){
+    .content .moviesl1{
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 350px 350px 350px 350px;
+    }
+    footer .question{
+        grid-template-columns: 240px 240px 240px;
+    }
+    footer .footbar{
+        grid-template-columns: 240px 240px 240px;
+        grid-template-rows: 30px 30px 30px 30px 30px;
+    }
+    footer .dropdown{
+        grid-template-columns: 240px 240px 240px;
+    }
+    footer .branding{
+        grid-template-columns: 240px 240px 240px;
+
+    }
+
+}
+@media only screen and (max-width: 800px){
+    .content .moviesl1{
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 350px 350px 350px 350px 350px;
+    }
+    footer .question{
+        grid-template-columns: 200px 200px 200px;
+        grid-column: 1/4;
+    }
+    footer .footbar{
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 30px 30px 30px 30px 30px;
+    }
+    footer .dropdown{
+        grid-template-columns: 200px 200px 200px;
+    }
+    footer .branding{
+        grid-template-columns: 200px 200px 200px;
+
+    }
+}
+@media only screen and (max-width: 700px){
+    footer .hold{
+        height: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .hold input{
+        width: 220px;
+    }
+    footer .hold button{
+        width: 90px;
+        font-size: 11px;
+        transform: translateY(-1%);
+    }
+    footer .question{
+        grid-template-columns: 240px 240px ;
+    }
+    footer .footbar{
+        grid-template-columns: 240px 240px ;
+        grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px;
+    }
+    footer .dropdown{
+        grid-template-columns: 240px 240px ;
+    }
+    footer .branding{
+        grid-template-columns: 240px 240px ;
+
+    }
+}
+@media only screen and (max-width: 550px){
+    .content .moviesl1{
+        grid-template-columns: 250px;
+        grid-template-rows: 300px 300px 300px;
+        justify-content: center;
+    }
+    .bit h2{
+        font-size: 16px;
+    }
+    .bit p{
+        font-size: 12px;
+    }
+    .main .holder{
+        height: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main section h1{
+        font-size: 34px;
+    }
+    footer .question{
+        grid-template-columns: 180px 180px ;
+    }
+    footer .footbar{
+        grid-template-columns: 180px 180px ;
+        grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px;
+    }
+    footer .dropdown{
+        grid-template-columns: 180px 180px ;
+    }
+    footer .branding{
+        grid-template-columns: 180px 180px ;
+
+    }
+}
+@media only screen and (max-width: 400px){
+    .main section h1{
+        font-size: 26px;
+    }
+    .main section .rate{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .holder{
+        flex-direction: column;
+    }
+    .holder input{
+        width: 220px;
+    }
+    .holder button{
+        width: 120px;
+    }
+    .trending h1{
+        font-size: 24px;
+    }
+    .reasons h1{
+        font-size: 24px;
+    }
+    footer .question{
+        grid-template-columns: 220px ;
+    }
+    footer .footbar{
+        grid-template-columns: 220px;
+        grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+    }
+    footer .dropdown{
+        grid-template-columns: 220px ;
+    }
+    footer .branding{
+        grid-template-columns: 220px ;
+
+    }
+}
+@media only screen and (max-width: 1000px) and (orientation: landscape){
+    .main{
+        height: 100vh;
+    }
+    .main .box{
+        height: 100vh;
+    }
+    .main section h1{
+        font-size: 32px;
+    }
+    .bits .bit{
+        height: 25vh;
+    }
+}
